@@ -9,15 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     
+    var cards: [Card] = cardData
+
     var body: some View {
         
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ScrollView(.horizontal) {
+            
+            HStack(alignment: .center, spacing: 20) {
+                
+                ForEach(cards) { card in
+                    CardView(card: card)
+                }
+            }
+            .padding(20)
         }
-        .padding()
     }
 }
 

@@ -13,6 +13,9 @@
 		0474E4012C3AF62F00065389 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0474E4002C3AF62F00065389 /* Preview Assets.xcassets */; };
 		0474E4092C3AF69000065389 /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0474E4072C3AF69000065389 /* sound-chime.mp3 */; };
 		0474E40F2C3B21D100065389 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474E40E2C3B21D100065389 /* CardView.swift */; };
+		04A4B6292C3B2429005E5462 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4B6282C3B2429005E5462 /* CardData.swift */; };
+		04A4B62B2C3B27AA005E5462 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4B62A2C3B27AA005E5462 /* CardModel.swift */; };
+		04A4B62E2C3B2914005E5462 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4B62D2C3B2914005E5462 /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		0474E4072C3AF69000065389 /* sound-chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-chime.mp3"; sourceTree = "<group>"; };
 		0474E40A2C3AF6A000065389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0474E40E2C3B21D100065389 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		04A4B6282C3B2429005E5462 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		04A4B62A2C3B27AA005E5462 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		04A4B62D2C3B2914005E5462 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				0474E40C2C3B21BB00065389 /* Main */,
 				0474E40B2C3B21B200065389 /* Screen */,
 				0474E40D2C3B21C400065389 /* View */,
+				04A4B6242C3B23EF005E5462 /* Model */,
+				04A4B6252C3B23F4005E5462 /* Data */,
+				04A4B62C2C3B28FE005E5462 /* Utilities */,
 				0474E4082C3AF69000065389 /* Sounds */,
 				0474E3FD2C3AF62F00065389 /* Assets.xcassets */,
 				0474E3FF2C3AF62F00065389 /* Preview Content */,
@@ -105,6 +114,30 @@
 				0474E40E2C3B21D100065389 /* CardView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04A4B6242C3B23EF005E5462 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04A4B62A2C3B27AA005E5462 /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04A4B6252C3B23F4005E5462 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				04A4B6282C3B2429005E5462 /* CardData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		04A4B62C2C3B28FE005E5462 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				04A4B62D2C3B2914005E5462 /* PlaySound.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,8 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0474E3FC2C3AF62D00065389 /* ContentView.swift in Sources */,
+				04A4B62E2C3B2914005E5462 /* PlaySound.swift in Sources */,
+				04A4B6292C3B2429005E5462 /* CardData.swift in Sources */,
 				0474E40F2C3B21D100065389 /* CardView.swift in Sources */,
 				0474E3FA2C3AF62D00065389 /* DevelopersApp.swift in Sources */,
+				04A4B62B2C3B27AA005E5462 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
